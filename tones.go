@@ -33,7 +33,7 @@ func NewTones(c color.RGBA) Tones {
 // Tone returns the color at the given tone.
 // It uses the cached value if it exists, and
 // it caches the value if it is not already.
-func (t Tones) Tone(tone int) color.RGBA {
+func (t *Tones) Tone(tone int) color.RGBA {
 	if c, ok := t.Tones[tone]; ok {
 		return c
 	}
