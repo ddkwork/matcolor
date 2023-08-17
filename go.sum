@@ -1,9 +1,13 @@
 github.com/goki/cam v0.0.0-20230817202126-32cd3fa76bf1 h1:6Ome1zaTAg7DKKpynG2f5N2WgKlR+g+SZWnf1mLBoQw=
 github.com/goki/cam v0.0.0-20230817202126-32cd3fa76bf1/go.mod h1:ZN1UhUWhtoSfU43fMbMlojQkKZVUzKW93dhtG62k5YE=
+github.com/goki/cam v0.0.0-20230817230211-1cb2fe99d34e h1:3oF5Hm85DsD8i//xG31fCh41uqv+biw1S9pM8peuyBI=
+github.com/goki/cam v0.0.0-20230817230211-1cb2fe99d34e/go.mod h1:ZN1UhUWhtoSfU43fMbMlojQkKZVUzKW93dhtG62k5YE=
 github.com/goki/ki v1.1.15 h1:jD6g4+H/Ko1ndJsrIFUIfT+OJRXW8bA9qUS8zLYJV84=
 github.com/goki/ki v1.1.15/go.mod h1:E+kCXzhA/chnUfo7ecneVn0A4n35KkXpJmFlRSkXhIY=
 github.com/goki/mat32 v1.0.17 h1:34bSmJeMh30lC5W7LH/d2opvKkIwjQeNMO0SotlLSBA=
 github.com/goki/mat32 v1.0.17/go.mod h1:S3pnfo7ye7yb8GvqE9If4tMel5UxTzhfCGZWCFiRyvI=
+github.com/goki/mat32 v1.0.18 h1:LS53De0LEJAfHZrZwdTvAOfIDzav/PDaDZMpEiyP9w8=
+github.com/goki/mat32 v1.0.18/go.mod h1:S3pnfo7ye7yb8GvqE9If4tMel5UxTzhfCGZWCFiRyvI=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=

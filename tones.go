@@ -39,7 +39,7 @@ func (t *Tones) Tone(tone int) color.RGBA {
 	}
 	c := hct.Uint32ToHCT(t.Key.RGBA())
 	c.SetTone(float32(tone))
-	r := c.ColorRGBA()
+	r := c.AsRGBA()
 	t.Tones[tone] = r
 	return r
 }
