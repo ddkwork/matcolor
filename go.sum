@@ -1,5 +1,5 @@
-github.com/goki/cam v0.9.3 h1:uztmhaJaghgo4byjVrxIAFc0RfrDRGkTL1clFay2oAY=
-github.com/goki/cam v0.9.3/go.mod h1:6V5XXtv0W03M0Nk/HzCrmXTMA3PlREU4y3RIJ9zGa0A=
+github.com/goki/cam v0.9.4 h1:bPApp7CHr5SBWaQCh6zpU1a1xrVUVKsJyM6+pRDs+lU=
+github.com/goki/cam v0.9.4/go.mod h1:6V5XXtv0W03M0Nk/HzCrmXTMA3PlREU4y3RIJ9zGa0A=
 github.com/goki/ki v1.1.15 h1:jD6g4+H/Ko1ndJsrIFUIfT+OJRXW8bA9qUS8zLYJV84=
 github.com/goki/ki v1.1.15/go.mod h1:E+kCXzhA/chnUfo7ecneVn0A4n35KkXpJmFlRSkXhIY=
 github.com/goki/mat32 v1.0.18 h1:LS53De0LEJAfHZrZwdTvAOfIDzav/PDaDZMpEiyP9w8=
