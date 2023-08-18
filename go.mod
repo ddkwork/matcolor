@@ -2,7 +2,7 @@ module github.com/goki/matcolor
 
 go 1.19
 
-require github.com/goki/cam v0.0.0-20230817230211-1cb2fe99d34e
+require github.com/goki/cam v0.9.1
 
 require (
 	github.com/goki/ki v1.1.15 // indirect
