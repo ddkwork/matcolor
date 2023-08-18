@@ -14,8 +14,8 @@ type Schemes struct {
 
 // NewSchemes returns new [Schemes] for the given
 // [Palette] containing both light and dark schemes.
-func NewSchemes(p Palette) Schemes {
-	return Schemes{
+func NewSchemes(p Palette) *Schemes {
+	return &Schemes{
 		Light: NewLightScheme(p),
 		Dark:  NewDarkScheme(p),
 	}
