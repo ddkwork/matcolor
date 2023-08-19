@@ -3,8 +3,8 @@
 package matcolor
 
 const (
-	Version = "v0.9.1"
-	GitCommit = "369c9c1" // the commit JUST BEFORE the release
-	VersionDate = "2023-08-19 00:59" // UTC
+	Version = "v0.9.2"
+	GitCommit = "afcf07f" // the commit JUST BEFORE the release
+	VersionDate = "2023-08-19 19:37" // UTC
 )
 
