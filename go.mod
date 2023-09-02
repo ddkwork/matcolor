@@ -1,4 +1,4 @@
-module github.com/goki/matcolor
+module goki.dev/matcolor
 
 go 1.19
 
