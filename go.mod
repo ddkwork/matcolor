@@ -2,7 +2,7 @@ module goki.dev/matcolor
 
 go 1.21.0
 
-require goki.dev/cam v0.9.12
+require goki.dev/cam v0.9.14
 
 require (
 	goki.dev/mat32/v2 v2.0.0-dev0.0.6 // indirect

@@ -1,6 +1,6 @@
 Name = "matcolor"
 Desc = ""
-Version = "v0.9.7"
+Version = "v0.9.8"
 Type = "Library"
 
 [Build]
