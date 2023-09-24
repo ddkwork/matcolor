@@ -62,6 +62,7 @@ func KeyFromPrimary(primary color.RGBA) *Key {
 	// Material adds 60, but we subtract 60 to get green instead of pink when specifying
 	// blue (TODO: is this a good idea, or should we just follow Material?)
 	k.Tertiary = p.SetHue(p.Hue - 60).SetChroma(24).AsRGBA()
+	k.Error = color.RGBA{179, 38, 30, 255} // #B3261E (Material default error color)
 	k.Neutral = p.SetChroma(4).AsRGBA()
 	k.NeutralVariant = p.SetChroma(8).AsRGBA()
 	return k
