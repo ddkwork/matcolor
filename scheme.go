@@ -6,9 +6,8 @@ package matcolor
 
 import "image/color"
 
-// Scheme contains the colors for
-// one color scheme (ex: light or dark).
-// To generate a scheme, use [NewScheme]
+// Scheme contains the colors for one color scheme (ex: light or dark).
+// To generate a scheme, use [NewScheme].
 type Scheme struct {
 
 	// Primary is the base primary color applied to important elements
@@ -158,6 +157,9 @@ type Scheme struct {
 	// // OnTertiaryFixedVariant is the color applied to low-emphasis content on top of TertiaryFixed
 	// OnTertiaryFixedVariant color.RGBA `desc:"OnTertiaryFixedVariant is the color applied to low-emphasis content on top of TertiaryFixed"`
 }
+
+// TheScheme is the currently active global color scheme.
+var TheScheme Scheme
 
 // NewLightScheme returns a new light-themed [Scheme]
 // based on the given [Palette].

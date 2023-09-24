@@ -12,6 +12,9 @@ type Schemes struct {
 	// TODO: maybe custom schemes?
 }
 
+// TheSchemes are the global color schemes.
+var TheSchemes Schemes
+
 // NewSchemes returns new [Schemes] for the given
 // [Palette] containing both light and dark schemes.
 func NewSchemes(p Palette) *Schemes {
