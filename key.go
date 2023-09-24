@@ -55,6 +55,7 @@ type Key struct {
 func KeyFromPrimary(primary color.RGBA) *Key {
 	k := &Key{}
 	p := hct.FromColor(primary)
+	p.SetTone(40)
 
 	k.Primary = p.SetChroma(max(p.Chroma, 48)).AsRGBA()
 	k.Secondary = p.SetChroma(16).AsRGBA()
