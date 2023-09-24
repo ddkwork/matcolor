@@ -13,7 +13,7 @@ type Schemes struct {
 }
 
 // TheSchemes are the global color schemes.
-var TheSchemes Schemes
+var TheSchemes *Schemes
 
 // NewSchemes returns new [Schemes] for the given
 // [Palette] containing both light and dark schemes.

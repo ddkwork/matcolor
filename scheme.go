@@ -159,7 +159,7 @@ type Scheme struct {
 }
 
 // TheScheme is the currently active global color scheme.
-var TheScheme Scheme
+var TheScheme *Scheme
 
 // NewLightScheme returns a new light-themed [Scheme]
 // based on the given [Palette].
