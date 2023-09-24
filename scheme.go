@@ -163,7 +163,7 @@ var TheScheme *Scheme
 
 // NewLightScheme returns a new light-themed [Scheme]
 // based on the given [Palette].
-func NewLightScheme(p Palette) Scheme {
+func NewLightScheme(p *Palette) Scheme {
 	return Scheme{
 		Primary:            p.Primary.Tone(40),
 		OnPrimary:          p.Primary.Tone(100),
@@ -218,7 +218,7 @@ func NewLightScheme(p Palette) Scheme {
 
 // NewDarkScheme returns a new dark-themed [Scheme]
 // based on the given [Palette].
-func NewDarkScheme(p Palette) Scheme {
+func NewDarkScheme(p *Palette) Scheme {
 	return Scheme{
 		Primary:            p.Primary.Tone(80),
 		OnPrimary:          p.Primary.Tone(20),

@@ -32,8 +32,8 @@ type Palette struct {
 }
 
 // NewPalette creates a new [Palette] from the given key colors.
-func NewPalette(key Key) Palette {
-	p := Palette{
+func NewPalette(key *Key) *Palette {
+	p := &Palette{
 		Primary:        NewTones(key.Primary),
 		Secondary:      NewTones(key.Secondary),
 		Tertiary:       NewTones(key.Tertiary),
