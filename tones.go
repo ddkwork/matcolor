@@ -23,8 +23,8 @@ type Tones struct {
 
 // NewTones returns a new set of [Tones]
 // for the given color.
-func NewTones(c color.RGBA) *Tones {
-	return &Tones{
+func NewTones(c color.RGBA) Tones {
+	return Tones{
 		Key:   c,
 		Tones: map[int]color.RGBA{},
 	}

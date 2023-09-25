@@ -6,57 +6,55 @@ package matcolor
 
 import "image/color"
 
+// Accent contains the 4 variations of a given Base color
+type Accent struct {
+
+	// Primary is the base primary color applied to important elements
+	Base color.RGBA `desc:"Primary is the base primary color applied to important elements"`
+
+	// OnPrimary is the color applied to content on top of Primary. It defaults to the contrast color of Primary.
+	On color.RGBA `desc:"OnPrimary is the color applied to content on top of Primary. It defaults to the contrast color of Primary."`
+
+	// PrimaryContainer is the color applied to elements with less emphasis than Primary
+	Container color.RGBA `desc:"PrimaryContainer is the color applied to elements with less emphasis than Primary"`
+
+	// OnPrimaryContainer is the color applied to content on top of PrimaryContainer. It defaults to the contrast color of PrimaryContainer.
+	OnContainer color.RGBA `desc:"OnPrimaryContainer is the color applied to content on top of PrimaryContainer. It defaults to the contrast color of PrimaryContainer."`
+}
+
+func NewAccentLight(tones Tones) Accent {
+	return Accent{
+		Base:        tones.Tone(40),
+		On:          tones.Tone(100),
+		Container:   tones.Tone(90),
+		OnContainer: tones.Tone(10),
+	}
+}
+
+func NewAccentDark(tones Tones) Accent {
+	return Accent{
+		Base:        tones.Tone(80),
+		On:          tones.Tone(20),
+		Container:   tones.Tone(30),
+		OnContainer: tones.Tone(90),
+	}
+}
+
 // Scheme contains the colors for one color scheme (ex: light or dark).
 // To generate a scheme, use [NewScheme].
 type Scheme struct {
 
-	// Primary is the base primary color applied to important elements
-	Primary color.RGBA `desc:"Primary is the base primary color applied to important elements"`
+	// Primary is the primary color applied to important elements
+	Primary Accent `desc:"Primary is the primary color applied to important elements"`
 
-	// OnPrimary is the color applied to content on top of Primary. It defaults to the contrast color of Primary.
-	OnPrimary color.RGBA `desc:"OnPrimary is the color applied to content on top of Primary. It defaults to the contrast color of Primary."`
+	// Secondary is the secondary color applied to less important elements
+	Secondary Accent `desc:"Secondary is the secondary color applied to less important elements"`
 
-	// PrimaryContainer is the color applied to elements with less emphasis than Primary
-	PrimaryContainer color.RGBA `desc:"PrimaryContainer is the color applied to elements with less emphasis than Primary"`
+	// Tertiary is the tertiary color applied as an accent to highlight elements and create contrast between other colors
+	Tertiary Accent `desc:"Tertiary is the tertiary color applied as an accent to highlight elements and create contrast between other colors"`
 
-	// OnPrimaryContainer is the color applied to content on top of PrimaryContainer. It defaults to the contrast color of PrimaryContainer.
-	OnPrimaryContainer color.RGBA `desc:"OnPrimaryContainer is the color applied to content on top of PrimaryContainer. It defaults to the contrast color of PrimaryContainer."`
-
-	// Secondary is the base secondary color applied to less important elements
-	Secondary color.RGBA `desc:"Secondary is the base secondary color applied to less important elements"`
-
-	// OnSecondary is the color applied to content on top of Secondary. It defaults to the contrast color of Secondary.
-	OnSecondary color.RGBA `desc:"OnSecondary is the color applied to content on top of Secondary. It defaults to the contrast color of Secondary."`
-
-	// SecondaryContainer is the color applied to elements with less emphasis than Secondary
-	SecondaryContainer color.RGBA `desc:"SecondaryContainer is the color applied to elements with less emphasis than Secondary"`
-
-	// OnSecondaryContainer is the color applied to content on top of SecondaryContainer. It defaults to the contrast color of SecondaryContainer.
-	OnSecondaryContainer color.RGBA `desc:"OnSecondaryContainer is the color applied to content on top of SecondaryContainer. It defaults to the contrast color of SecondaryContainer."`
-
-	// Tertiary is the base tertiary color applied as an accent to highlight elements and screate contrast between other colors
-	Tertiary color.RGBA `desc:"Tertiary is the base tertiary color applied as an accent to highlight elements and screate contrast between other colors"`
-
-	// OnTertiary is the color applied to content on top of Tertiary. It defaults to the contrast color of Tertiary.
-	OnTertiary color.RGBA `desc:"OnTertiary is the color applied to content on top of Tertiary. It defaults to the contrast color of Tertiary."`
-
-	// TertiaryContainer is the color applied to elements with less emphasis than Tertiary
-	TertiaryContainer color.RGBA `desc:"TertiaryContainer is the color applied to elements with less emphasis than Tertiary"`
-
-	// OnTertiaryContainer is the color applied to content on top of TertiaryContainer. It defaults to the contrast color of TertiaryContainer.
-	OnTertiaryContainer color.RGBA `desc:"OnTertiaryContainer is the color applied to content on top of TertiaryContainer. It defaults to the contrast color of TertiaryContainer."`
-
-	// Error is the base error color applied to elements that indicate an error or danger
-	Error color.RGBA `desc:"Error is the base error color applied to elements that indicate an error or danger"`
-
-	// OnError is the color applied to content on top of Error. It defaults to the contrast color of Error.
-	OnError color.RGBA `desc:"OnError is the color applied to content on top of Error. It defaults to the contrast color of Error."`
-
-	// ErrorContainer is the color applied to elements with less emphasis than Error
-	ErrorContainer color.RGBA `desc:"ErrorContainer is the color applied to elements with less emphasis than Error"`
-
-	// OnErrorContainer is the color applied to content on top of ErrorContainer. It defaults to the contrast color of ErrorContainer.
-	OnErrorContainer color.RGBA `desc:"OnErrorContainer is the color applied to content on top of ErrorContainer. It defaults to the contrast color of ErrorContainer."`
+	// Error is the error color applied to elements that indicate an error or danger
+	Error Accent `desc:"Error is the error color applied to elements that indicate an error or danger"`
 
 	// SurfaceDim is the color applied to elements that will always have the dimmest surface color (see Surface for more information)
 	SurfaceDim color.RGBA `desc:"SurfaceDim is the color applied to elements that will always have the dimmest surface color (see Surface for more information)"`
@@ -165,25 +163,10 @@ var TheScheme *Scheme
 // based on the given [Palette].
 func NewLightScheme(p *Palette) Scheme {
 	return Scheme{
-		Primary:            p.Primary.Tone(40),
-		OnPrimary:          p.Primary.Tone(100),
-		PrimaryContainer:   p.Primary.Tone(90),
-		OnPrimaryContainer: p.Primary.Tone(10),
-
-		Secondary:            p.Secondary.Tone(40),
-		OnSecondary:          p.Secondary.Tone(100),
-		SecondaryContainer:   p.Secondary.Tone(90),
-		OnSecondaryContainer: p.Secondary.Tone(10),
-
-		Tertiary:            p.Tertiary.Tone(40),
-		OnTertiary:          p.Tertiary.Tone(100),
-		TertiaryContainer:   p.Tertiary.Tone(90),
-		OnTertiaryContainer: p.Tertiary.Tone(10),
-
-		Error:            p.Error.Tone(40),
-		OnError:          p.Error.Tone(100),
-		ErrorContainer:   p.Error.Tone(90),
-		OnErrorContainer: p.Error.Tone(10),
+		Primary:   NewAccentLight(p.Primary),
+		Secondary: NewAccentLight(p.Secondary),
+		Tertiary:  NewAccentLight(p.Tertiary),
+		Error:     NewAccentLight(p.Error),
 
 		SurfaceDim:    p.Neutral.Tone(87),
 		Surface:       p.Neutral.Tone(98),
@@ -220,25 +203,10 @@ func NewLightScheme(p *Palette) Scheme {
 // based on the given [Palette].
 func NewDarkScheme(p *Palette) Scheme {
 	return Scheme{
-		Primary:            p.Primary.Tone(80),
-		OnPrimary:          p.Primary.Tone(20),
-		PrimaryContainer:   p.Primary.Tone(30),
-		OnPrimaryContainer: p.Primary.Tone(90),
-
-		Secondary:            p.Secondary.Tone(80),
-		OnSecondary:          p.Secondary.Tone(20),
-		SecondaryContainer:   p.Secondary.Tone(30),
-		OnSecondaryContainer: p.Secondary.Tone(90),
-
-		Tertiary:            p.Tertiary.Tone(80),
-		OnTertiary:          p.Tertiary.Tone(20),
-		TertiaryContainer:   p.Tertiary.Tone(30),
-		OnTertiaryContainer: p.Tertiary.Tone(90),
-
-		Error:            p.Error.Tone(80),
-		OnError:          p.Error.Tone(20),
-		ErrorContainer:   p.Error.Tone(30),
-		OnErrorContainer: p.Error.Tone(90),
+		Primary:   NewAccentDark(p.Primary),
+		Secondary: NewAccentDark(p.Secondary),
+		Tertiary:  NewAccentDark(p.Tertiary),
+		Error:     NewAccentDark(p.Error),
 
 		SurfaceDim:    p.Neutral.Tone(6),
 		Surface:       p.Neutral.Tone(6),
