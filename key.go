@@ -30,25 +30,25 @@ import (
 type Key struct {
 
 	// the primary accent key color
-	Primary color.RGBA `desc:"the primary accent key color"`
+	Primary color.RGBA
 
 	// the secondary accent key color
-	Secondary color.RGBA `desc:"the secondary accent key color"`
+	Secondary color.RGBA
 
 	// the tertiary accent key color
-	Tertiary color.RGBA `desc:"the tertiary accent key color"`
+	Tertiary color.RGBA
 
 	// the error accent key color
-	Error color.RGBA `desc:"the error accent key color"`
+	Error color.RGBA
 
 	// the neutral key color used to generate surface and surface container colors
-	Neutral color.RGBA `desc:"the neutral key color used to generate surface and surface container colors"`
+	Neutral color.RGBA
 
 	// the neutral variant key color used to generate surface variant and outline colors
-	NeutralVariant color.RGBA `desc:"the neutral variant key color used to generate surface variant and outline colors"`
+	NeutralVariant color.RGBA
 
 	// an optional map of custom accent key colors
-	Custom map[string]color.RGBA `desc:"an optional map of custom accent key colors"`
+	Custom map[string]color.RGBA
 }
 
 // Key returns a new [Key] from the given primary accent key color.
