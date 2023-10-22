@@ -1,5 +1,5 @@
-goki.dev/cam v0.9.20 h1:K4xufvdPek+lyK+xmYskD5rI81Ek6obeISTUbBnXO14=
-goki.dev/cam v0.9.20/go.mod h1:Uqn8K6uCVUedjWDlk5Z/Qml4j5D70kT+DxJwbXGn9Mg=
+goki.dev/cam v0.9.25 h1:9n6yw6UBdPSLFg/7Tuf+cNWwHHALs8LfYQxaGlsCxaM=
+goki.dev/cam v0.9.25/go.mod h1:fGGsyTGW4c4GqeZUG6kodQkVVpZRSgJImOz0WQED2uw=
 goki.dev/mat32/v2 v2.0.0-dev0.0.7 h1:5SLSCRU1/axEkJ+MWEMuxCTMYc+/C1F/z62ojAE9ePE=
 goki.dev/mat32/v2 v2.0.0-dev0.0.7/go.mod h1:heGirfS2nYEqghT3xu3u+0c5JFRYcqKEeuCZ5cGYCSE=
 golang.org/x/image v0.13.0 h1:3cge/F/QTkNLauhf2QoE9zp+7sr+ZcL4HnoZmdwg9sg=
