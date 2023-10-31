@@ -4,9 +4,9 @@ package matcolor
 
 const (
 	// Version is the version of this package being used
-	Version = "v0.9.19"
+	Version = "v0.9.20"
 	// GitCommit is the commit just before the latest version commit
-	GitCommit = "62ced23"
+	GitCommit = "8dd5961"
 	// VersionDate is the date-time of the latest version commit in UTC (in the format 'YYYY-MM-DD HH:MM', which is the Go format '2006-01-02 15:04')
-	VersionDate = "2023-10-31 23:05"
+	VersionDate = "2023-10-31 23:09"
 )
