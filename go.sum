@@ -1,8 +1,8 @@
-goki.dev/cam v0.9.30 h1:jsozEruNd36iPGyR8IpQayeuu5/4VW6Orw98rYuoItE=
-goki.dev/cam v0.9.30/go.mod h1:shXJfCKqoNOl82otoXzTH7GxyNQcnp/2+Q+tYQPOXU0=
-goki.dev/enums v0.9.32 h1:PxOf5ZfrdmO887YnARl6xdPjB3JPUREKWPOLYWF1eJc=
-goki.dev/enums v0.9.32/go.mod h1:LY28X2e9VVLMHYDHfze+T2bIuaWVR7VYmF5DVEKDEzk=
-goki.dev/mat32/v2 v2.0.0-dev0.0.8 h1:/+YxLyOAC7WKsxa/bWUR75JaLmuivlOGlTyucR3zoO0=
-goki.dev/mat32/v2 v2.0.0-dev0.0.8/go.mod h1:BvGUlTT1doWw8xk8UZ9InNitaYq5V5kQJlwA+vo0/DU=
+goki.dev/cam v0.9.31 h1:p73BIg7NLjHAXAJyYDIXmyHJZcbOmZT+FRGQhlbUca8=
+goki.dev/cam v0.9.31/go.mod h1:3JqA1HDLUaT+vcMnEhbpWK+7r7DACrIbxq4tvlgyGnk=
+goki.dev/enums v0.9.34 h1:RaC9tV3c/FgwEle4L32FwOhX+3weC0RxbqeRulo70PE=
+goki.dev/enums v0.9.34/go.mod h1:sDl+U/ExjsIpTkGqloyLTmwQ+lSD2n68irRB4ZWygx8=
+goki.dev/mat32/v2 v2.0.0-dev0.0.9 h1:85Dh6QXqv2LRuIbKYBqm2hUfgzQsioqE4+zb+XscgvI=
+goki.dev/mat32/v2 v2.0.0-dev0.0.9/go.mod h1:RD8HIXKvX+05CWhJYdJ77g033eouNT3HYkGCVGQjW3I=
 golang.org/x/image v0.13.0 h1:3cge/F/QTkNLauhf2QoE9zp+7sr+ZcL4HnoZmdwg9sg=
 golang.org/x/image v0.13.0/go.mod h1:6mmbMOeV28HuMTgA6OSRkdXKYw/t5W9Uwn2Yv1r3Yxk=
