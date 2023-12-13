@@ -1,8 +1,6 @@
 module goki.dev/matcolor
 
-go 1.21.0
-
-toolchain go1.21.4
+go 1.21
 
 require goki.dev/cam v0.9.43
 
